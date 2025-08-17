@@ -15,6 +15,7 @@ phases:
       
       # perform a Snyk SCA scan; continue if vulnerabilities are found
       - snyk test || true
+      - snyk code test 
       
       # upload a snapshot of the project to Snyk for continuous monitoring
       - snyk monitor
